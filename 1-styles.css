@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    position: relative;
+    color: #8C1B33;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #8C1B33;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover::after {
+    visibility: visible;
+    width: 100%;
+}

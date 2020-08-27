@@ -1,0 +1,37 @@
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+li {
+    width: 300px;
+    height: 500px;
+    margin: 2rem;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-radius: 12px;
+    background-color: #F7F7F7;
+    padding: 1rem;
+}
+
+.icon {
+    background-image: url(./d416199ca6ecdbd0f8a3.png);
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin-top: 10%;
+}
+
+.i-css {
+    background-position: center center;
+}
+
+.i-js {
+    background-position: right center;
+}
