@@ -14,8 +14,8 @@
   bottom: 0;
   left: 0;
   right: 0;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   text-align: center;
   box-sizing: border-box;
 }
@@ -34,7 +34,6 @@ border-width: 5px;
 border-style: solid;
 width: 60px;
 height: 60px;
-margin-left: -40px;
 position: absolute;
 color: #FFFFFF;
 text-align: center;
@@ -46,6 +45,7 @@ transition: -webkit-transform ease-out 200ms;
 transition: transform ease-out 200ms;
 transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
 z-index: 1;
+font-size:100%
 }
 
 .menu-open {
@@ -108,75 +108,22 @@ z-index: 1;
     border-style: solid;
     border-color: #C81938;
     border-width: 1px;
+    width: 67px;
+    height: 67px;
+    line-height: 67px;
     
     }
      
     .menu-open-button {
       z-index: 2;
+      cursor: pointer;
       -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
       transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
       -webkit-transition-duration: 400ms;
       transition-duration: 400ms;
       -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
       transform: scale(1.1, 1.1) translate3d(0, 0, 0);
-      cursor: pointer;
-      box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
       }
-
-      .menu-open-button:hover {
-        -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
-        transform: scale(1.2, 1.2) translate3d(0, 0, 0);
-        }
-        
-        .menu-open:checked + .menu-open-button {
-        -webkit-transition-timing-function: linear;
-        transition-timing-function: linear;
-        -webkit-transition-duration: 200ms;
-        transition-duration: 200ms;
-        -webkit-transform: scale(0.9, 0.9) translate3d(0, 0, 0);
-        transform: scale(0.9, 0.9) translate3d(0, 0, 0);
-        }
-        
-        .menu-open:checked ~ .menu-item {
-        -webkit-transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
-        transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
-        }
-        
-
-.menu-item:nth-child(3) {
--webkit-transition-duration: 140ms;
-transition-duration: 140ms;
-}
-
-.menu-item:nth-child(4) {
--webkit-transition-duration: 140ms;
-transition-duration: 140ms;
-}
-
-.menu-item:nth-child(5) {
--webkit-transition-duration: 140ms;
-transition-duration: 140ms;
-}
-
-.menu-item:nth-child(6) {
--webkit-transition-duration: 140ms;
-transition-duration: 140ms;
-}
-
-.menu-item:nth-child(7) {
--webkit-transition-duration: 140ms;
-transition-duration: 140ms;
-}
-
-.menu-item:nth-child(8) {
--webkit-transition-duration: 140ms;
-transition-duration: 140ms;
-}
-
-.menu-item:nth-child(9) {
--webkit-transition-duration: 140ms;
-transition-duration: 140ms;
-}
 
 .menu-open:checked ~ .menu-item:nth-child(3) {
 transition-duration: 140ms;
@@ -212,9 +159,6 @@ transition-duration: 140ms;
 -webkit-transform: translate3d(-90.86291px, 52.62064px, 0);
 transform:  translateY(386px);
 }
-
-
-
 
 /* END MENU  */
    
